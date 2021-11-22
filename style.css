@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%vh;
+}
+
+.background{
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 100%vh;
+    justify-content: center;
+    animation-name: scale 0.2s ;
+ 
+}
+
+    @keyframes scale {
+        0%{
+            transition: scale(1)
+
+        }
+        100%{
+            transition:scale(5);
+        }
+        
+    }
+
+
+.bg-image{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover; 
+    background-color: rgb(0,0,0,0.4);
+}
+
+.text  {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    top: 20rem;
+    left: 12rem;
+
+}
+p {
+    margin: 1rem;
+    width: 20%;
+
+}
+
+button{
+    width:20rem;
+    height:5rem;
+}
+
+.side-bar{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    right: 0;
+    height: 100%;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 3rem;
+    transform: ease-in-out 2s;
+    animation-duration: 2s;
+    transition: ease-in-out 0.3s;
+
+}
+
+.off{
+
+    right :-25rem
+}
+
+.side-bar ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+li{
+    justify-content: space-evenly;
+}
+
+li a {
+    text-decoration: none;
+    color: gold;
+}
+
+.sanvichbtn{
+    display: flex ;
+    flex-direction: column;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+
+.sandiv{
+    display: relative;
+    background-color: black;
+    width: 3rem;
+    height: 0.5rem;
+    margin:0.2rem;
+
+}
+/* transfor sandvich bar to x */
